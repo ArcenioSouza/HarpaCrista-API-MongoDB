@@ -7,16 +7,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "commit": " cz "
+    "cm": "cz"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
