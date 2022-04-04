@@ -3,8 +3,8 @@ import db from './config/dbConnect.js'
 import routes from './routes/index.js'
 
 const app = express()
-db.on("error", () => console.log("Erro de conexão"))
-db.once("open", () => console.log("Conectado com sucesso"))
+db.on("error", () => console.log("Connection error"))
+db.once("open", () => console.log("Connected to the database successfully"))
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
