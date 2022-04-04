@@ -28,10 +28,9 @@ router.get("/hinos/chorusExcerpt/:chorus", (req, res) => {
          return res.status(200).json(hino)
       }
       else{
-         return res.status(200).json({msg: 'hino not found'})
+         return res.status(404).json({msg: 'hino not found'})
       }
-   })
-   
+   })   
 })
 
 export default router;
