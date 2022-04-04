@@ -1,10 +1,13 @@
 import { Router } from "express";
-import hinos from "../db/hinos.js"
+import hinos from "../model/hino.js"
 
 const router = Router();
 
 router.get("/hinos", (req, res) => {
-   res.status(200).json(hinos)
+   hinos.find((error, hinos) => {
+      if(!error)
+      res.status(200).json(hinos)
+   })   
 })
 
 router.get("/hinos/id/:id", (req, res) => {
