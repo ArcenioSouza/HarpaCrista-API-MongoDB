@@ -9,7 +9,6 @@
     "start": "nodemon server.js",
     "commit": "git-cz"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,7 +18,8 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
   },
   "config": {
     "commitizen": {
