@@ -7,8 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "cm": "cz"
+    "commit": "git-cz"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
