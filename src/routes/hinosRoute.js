@@ -11,4 +11,6 @@ router.get("/hinos/title/:title", HinosController.getTitleHino)
 
 router.get("/hinos/chorusExcerpt/:chorus", HinosController.getChorusHino)
 
+router.post("/hinos/save", HinosController.saveHino)
+
 export default router;
