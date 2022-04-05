@@ -2,10 +2,6 @@ import mongoose from "mongoose";
 
 const hinoSchema = new mongoose.Schema(
    {
-      id: {
-         type: String,
-         required: true
-      },
       number: {
          type: Number, 
          required: true
