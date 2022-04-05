@@ -2,3 +2,6 @@
 
 # dotenv variables
 .env
+
+# model database
+/hinosDB.json

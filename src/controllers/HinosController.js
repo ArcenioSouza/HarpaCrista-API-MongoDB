@@ -32,6 +32,17 @@ class HinosController {
          res.status(200).json(hino)
       })
    }
+
+   static saveHino = (req, res) => {
+      let hino = new hinos(req.body);
+      hino.save((error) => {
+         if(error){
+            res.status(500).send({message: `Fail to save - ${error}`})
+         } else {
+            res.status(201).send(hino.toJSON())
+         }
+      })
+   }
 }
 
 export default HinosController;
