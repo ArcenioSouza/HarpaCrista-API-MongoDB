@@ -39,7 +39,19 @@ class HinosController {
          if(error){
             res.status(500).send({message: `Fail to save - ${error}`})
          } else {
-            res.status(201).send(hino.toJSON())
+            res.status(201).json(hino)
+         }
+      })
+   }
+
+   static updateHino = (req, res) => {
+      let id = req.params.id
+
+      hinos.findByIdAndUpdate(id, {$set: req.body}, (error) => {
+         if(error){
+            res.status(500).send({message: `Fail to update - ${error}`})
+         } else {
+            res.status(201).send({message: `Update done successfully`})
          }
       })
    }
