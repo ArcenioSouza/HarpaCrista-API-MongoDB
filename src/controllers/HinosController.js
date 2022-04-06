@@ -55,6 +55,18 @@ class HinosController {
          }
       })
    }
+
+   static deleteHino = (req, res) => {
+      let id = req.params.id
+
+      hinos.findByIdAndDelete(id, (error) => {
+         if(error){
+            res.status(500).send({message: `Fail to delete - ${error}`})
+         } else {
+            res.status(201).send({message: `delete done successfully`})
+         }
+      })
+   }
 }
 
 export default HinosController;
