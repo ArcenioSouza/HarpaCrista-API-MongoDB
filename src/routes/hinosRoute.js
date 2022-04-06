@@ -15,4 +15,6 @@ router.post("/hinos/save", HinosController.saveHino)
 
 router.put("/hinos/update/:id", HinosController.updateHino)
 
+router.delete("/hinos/delete/:id", HinosController.deleteHino)
+
 export default router;
