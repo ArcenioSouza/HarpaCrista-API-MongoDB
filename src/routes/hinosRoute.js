@@ -13,4 +13,6 @@ router.get("/hinos/chorusExcerpt/:chorus", HinosController.getChorusHino)
 
 router.post("/hinos/save", HinosController.saveHino)
 
+router.put("/hinos/update/:id", HinosController.updateHino)
+
 export default router;
