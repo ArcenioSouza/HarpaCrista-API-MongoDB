@@ -1,4 +1,4 @@
-# Harpa Cristã API (Em construção)
+# :construction: Harpa Cristã API (Em construção)
 
 Essa aplicação é um banco de dados de consulta aos hinos da harpa cristã adotado nas Igrejas Pentecostais. Destinado aos desenvolvedores que desejam construir uma aplicação front-end com essas informações.
 
@@ -52,15 +52,15 @@ npm start
 
 **Observação:** Essa aplicação será executada por padrão na porta 3000 do seu localHost, caso essa porta esteja sendo utilizada por outra aplicação basta mudar o valor da variável `port` do arquivo `src/app.js` para um valor de porta disponível em seu sistema.
 
-## Para fazer requisição da API
+## :pushpin: Para fazer requisição da API
 
 Você pode utilizar essa api localmente seguindo as orientações acima e testando as rotas da API em seu localhost ou pode utilizá-la remotamente através dessa url que está hospedada no servidor do Heroku [https://harpa-crista.herokuapp.com](https://harpa-crista.herokuapp.com).
 
 Essa aplicação possui um conjunto de rotas que torna possível a consulta de informações sobre os hinos da harpã cristã de diferentes formas, entre elas: 
-- por numero ([https://harpa-crista.herokuapp.com/hinos](https://harpa-crista.herokuapp.com/hinos/number/:number))
-- por titulo ([https://harpa-crista.herokuapp.com/hinos](https://harpa-crista.herokuapp.com/hinos/title/:title))
-- por refrão ([https://harpa-crista.herokuapp.com/hinos](https://harpa-crista.herokuapp.com/hinos/chorus/:chorus))
-- todos ([https://harpa-crista.herokuapp.com/hinos](https://harpa-crista.herokuapp.com/hinos))
+- por numero ([https://harpa-crista.herokuapp.com/hinos/number/3](https://harpa-crista.herokuapp.com/hinos/number/3))
+- por titulo ([https://harpa-crista.herokuapp.com/hinos/title/plena paz](https://harpa-crista.herokuapp.com/hinos/title/plena))
+- por refrão ([https://harpa-crista.herokuapp.com/hinos/chorus/manda-nos chuvas](https://harpa-crista.herokuapp.com/hinos/chorus/manda-nos))
+- todos os hinos ([https://harpa-crista.herokuapp.com/hinos](https://harpa-crista.herokuapp.com/hinos))
 
 ### :airplane: Rotas da API
 
