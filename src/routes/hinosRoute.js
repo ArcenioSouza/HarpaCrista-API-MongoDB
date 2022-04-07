@@ -9,7 +9,7 @@ router.get("/hinos/number/:number", HinosController.getNumberHino)
 
 router.get("/hinos/title/:title", HinosController.getTitleHino)
 
-router.get("/hinos/chorusExcerpt/:chorus", HinosController.getChorusHino)
+router.get("/hinos/chorus/:chorus", HinosController.getChorusHino)
 
 router.post("/hinos/save", HinosController.saveHino)
 
