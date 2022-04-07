@@ -63,8 +63,12 @@ const hinoSchema = new mongoose.Schema({
    video: {
       type: String,
       required: false,
-   },
-});
+   },  
+},
+   {
+      versionKey: false
+   }
+);
 
 const hinos = mongoose.model("hinos", hinoSchema);
 
